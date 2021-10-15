@@ -1,0 +1,55 @@
+{
+  "name": "mscore/core",
+  "type": "mscore",
+  "description": "PHP Framework",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Majd Othman",
+      "email": "majd.os.sy@hotmail.com"
+    }
+  ],
+  "version": "1.0.0",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "packages/*",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "require": {
+    "symfony/var-dumper": "^5.3",
+    "monolog/monolog": "^2.3",
+    "composer/installers": "^2.0",
+    "symfony/yaml": "^5.3",
+    "mscore/be": "^1.0",
+    "mscore/fe": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MS\\Core\\": "Core"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "preferred-install": {
+      "mscore/be": "web"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "ln -snvf ../packages/be ./web/be"
+    ]
+  },
+  "extra": {
+    "installer-paths": {
+      "web": [
+        "mscore/be"
+      ]
+    }
+  }
+}

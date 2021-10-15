@@ -1,0 +1,23 @@
+{
+  "name": "mscore/be",
+  "type": "mscms",
+  "description": "Backend of MS Framework",
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": [
+    "MS CMS",
+    "MS Framework"
+  ],
+  "authors": [
+    {
+      "name": "Majd Othman",
+      "email": "majd.os.sy@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MS\\Core\\Be\\": "Classes",
+      "MS\\Core\\MsCMS\\": "Classes"
+    }
+  }
+}

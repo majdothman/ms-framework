@@ -1,0 +1,36 @@
+{
+  "name": "othman/mscore",
+  "type": "mscore",
+  "description": "PHP Framework",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Majd Othman",
+      "email": "majd.os.sy@hotmail.com"
+    }
+  ],
+  "version": "1.0.0",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "packages/*"
+    }
+  ],
+  "require": {
+    "mscore/core": "^1"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "preferred-install": {
+      "mscore/be": "web"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "ln -snvf ../vendor/mscore/fe/index.php ./web/index.php",
+      "ln -snvf ../packages/be ./web/mscms"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+MS:
+  DB:
+    host: db
+    port: 3306
+    database: db
+    username: db
+    password: db
+  SYS:
+    root_path: /var/www/html
+    public_folder: web
+    enable_log: 1
+    enable_activities: 1
+  BE:
+    # Login Username: admin , password: admin please change it from BE after login.
+    # assets: can be from internal or external (http:/)
+    assets:
+      js:
+        head:
+          - /mscms/Resources/assets/js/jquery.js
+        footer:
+          - /mscms/Resources/assets/js/bootstrap.bundle.min.js
+          - /mscms/Resources/assets/js/sidebars.js
+        css:
+          - /mscms/Resources/assets/css/mscms.css
+  FE:
+    BASE_URL: https://msframework.ddev.site/
+    # assets: can be from internal or external (http:/)
+    assets:
+      js:
+        # head:
+        footer:
+          - /Resources/assets/js/app.js
+      css:
+        - /Resources/assets/css/app.css

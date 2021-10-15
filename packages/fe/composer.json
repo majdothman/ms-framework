@@ -1,0 +1,22 @@
+{
+  "name": "mscore/fe",
+  "type": "mscms",
+  "description": "Frontend Classes of MS Framework",
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": [
+    "MS CMS",
+    "MS Framework"
+  ],
+  "authors": [
+    {
+      "name": "Majd Othman",
+      "email": "majd.os.sy@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MS\\Fe\\": "Classes"
+    }
+  }
+}

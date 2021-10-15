@@ -1,0 +1,8 @@
+.idea/
+.ddev
+vendor
+node_module
+Build
+.Log
+web/Files
+web/index.php
